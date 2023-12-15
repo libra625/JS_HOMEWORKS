@@ -1,5 +1,7 @@
 'use strict';
 
+//all variables can be const
+
 // let number10 = prompt("Enter first number ");
 // let number20 = prompt("Enter second number ");
 
