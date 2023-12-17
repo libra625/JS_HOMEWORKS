@@ -16,7 +16,7 @@ let visitorName;
 //еhe expressions above can be const
 
 // task3
-let tenInNumericAndString = "10" + 10;
+const tenInNumericAndString = "10" + 10;
 //concatenation
 //еhe expressions above can be const
 
