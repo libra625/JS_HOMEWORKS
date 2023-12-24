@@ -18,21 +18,23 @@ let userNumberStored = userNumber;
 
 userNumber /= 10_000;
 userNumberStored %= 10_000;
-alert(`first digit is ${ Math.floor(userNumber) }`);
+const firstDigit = Math.floor(userNumber);
 
 userNumber = userNumberStored;
 userNumber /= 1_000;
 userNumberStored %= 1_000;
-alert(`second digit is ${ Math.floor(userNumber) }`);
+const secondDigit = Math.floor(userNumber);
 
 userNumber = userNumberStored;
 userNumber /= 100;
 userNumberStored %= 100;
-alert(`third digit is ${ Math.floor(userNumber) }`);
+const thirdDigit = Math.floor(userNumber);
 
 userNumber = userNumberStored;
 userNumber /= 10;
 userNumberStored %= 10;
-alert(`fourth digit is ${ Math.floor(userNumber) }`);
+const forthDigit = Math.floor(userNumber);
 
-alert(`fifth digit is ${ userNumberStored }`);
+const fifthDigit =userNumberStored;
+
+alert(firstDigit + " " + secondDigit + " " + thirdDigit + " " + forthDigit + " " + fifthDigit);
