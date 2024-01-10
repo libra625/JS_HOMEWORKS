@@ -16,4 +16,4 @@ let sumOfArraySquareElements = 0;
 for (let i = 0; i < array.length; i++) {
     sumOfArraySquareElements += array[i] ** 2;
 }
-console.log(`Sum of the array = ${sumOfArraySquareElements}`);
+console.log(`Sum of the square elements of the array = ${sumOfArraySquareElements}`);
