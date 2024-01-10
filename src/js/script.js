@@ -8,9 +8,9 @@ while (isNaN(userNumber) || userNumber === 0){
 
 if (userNumber >= 1){
     for (let i = 2; i <= userNumber; i++ ) {
-        if (i === userNumber || userNumber === 1){
+        if (i === userNumber || userNumber === 1) {
             console.log("Your number ${userNumber} is primary");
-            break
+            break;
         }
 
         if (userNumber % i === 0) {
