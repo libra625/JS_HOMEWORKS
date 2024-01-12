@@ -1,6 +1,6 @@
 'use strict';
 
-function padString(string= "", lengthRequired, characterToChange = "", positionRight = true) {
+function padString(string, lengthRequired, characterToChange, positionRight = true) {
         if (string.length === 0) {
             return "error no string";
         }
@@ -19,7 +19,7 @@ function padString(string= "", lengthRequired, characterToChange = "", positionR
 
         if (temporaryString.length >= lengthRequired) {
             return temporaryString.slice(0, lengthRequired);
-        } else if (characterToChange.length !== 1) {
+        } else if (characterToChange === undefined || characterToChange.length !== 1) {
             return "error no character for empty space";
         }
         
@@ -44,4 +44,4 @@ function padString(string= "", lengthRequired, characterToChange = "", positionR
 
 console.log(padString('привіт', 8, '') );
 console.log(padString('привіт', 6, '*', false));
-console.log(padString('привіт', 2));
+console.log(padString('привіт', 20));
