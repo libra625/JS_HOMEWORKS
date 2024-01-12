@@ -8,9 +8,7 @@ function padString(string, lengthRequired, characterToChange, positionRight = tr
         if (isNaN(lengthRequired) || lengthRequired === null || typeof lengthRequired !== "number") {
             return "required length is strange";
         }
-
-
-
+        
         if (typeof positionRight !== "boolean") {
             return "error not a boolean (position) of addition";
         }
@@ -26,6 +24,7 @@ function padString(string, lengthRequired, characterToChange, positionRight = tr
         if (positionRight) {
             while ( temporaryString.length < lengthRequired) {
                 temporaryString += characterToChange;
+                // console.log(temporaryString);
             }
             
             return temporaryString;
@@ -44,4 +43,4 @@ function padString(string, lengthRequired, characterToChange, positionRight = tr
 
 console.log(padString('привіт', 8, '') );
 console.log(padString('привіт', 6, '*', false));
-console.log(padString('привіт', 20));
+console.log(padString('привіт', 10, "+"));
