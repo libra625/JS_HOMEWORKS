@@ -1,6 +1,6 @@
 'use strict';
 
-function numberToDegree(number, degree = 1) {
+function riseNumberToDegree(number, degree = 1) {
 
     if (isNaN(number) || isNaN(degree))
         return "error incorrect data";
@@ -14,4 +14,4 @@ function numberToDegree(number, degree = 1) {
 const number = +prompt("Enter number which need to be risen to a certain power", "2");
 const degree = +prompt("Enter a degree for your number", "8");
 
-alert(`Result : ${numberToDegree(number, degree)}`);
+alert(`Result : ${riseNumberToDegree(number, degree)}`);
