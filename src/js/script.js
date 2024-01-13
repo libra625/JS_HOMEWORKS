@@ -15,7 +15,7 @@ function calculateCostOfRequiredPotato(litersOfSoup) {
    return `You need ${amountOfPotatoToCook} kg to cook ${litersOfSoup} liters but you can buy just ${Math.ceil(amountOfPotatoToCook)} and it will cost you ${Math.ceil(amountOfPotatoToCook) * potato1KilogramCost} UAH`;
 }
 
-let litersOfSoup = +prompt("How many liters of soup do you want to cook?", "48");
+const litersOfSoup = +prompt("How many liters of soup do you want to cook?", "48");
 
 console.log(calculateCostOfRequiredPotato(litersOfSoup));
 
