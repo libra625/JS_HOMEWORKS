@@ -8,9 +8,9 @@ function deleteNegativeFromArray(array) {
     }
     
     for (let i = 0; i <= array.length; i++) {
-        if (array[i] > 0) {
-            positiveArray.push(array[i]);
-        }
+        if (array[i] <= 0) continue;
+
+        positiveArray.push(array[i]);
     }
     
     return !positiveArray.length ? null : positiveArray;
