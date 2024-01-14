@@ -3,9 +3,7 @@
 function deleteNegativeFromArray(array) {
     const positiveArray = []
 
-    if (!array.length) {
-        return "Array is empty";
-    }
+    if (!array.length) return "Array is empty";
     
     for (let i = 0; i <= array.length; i++) {
         if (array[i] <= 0) continue;
