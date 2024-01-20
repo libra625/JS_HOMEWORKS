@@ -3,7 +3,7 @@
 const array = [];
 
 const uniqueNumber = function () {
-    let randomNumber = Math.floor(Math.random()*100);
+    let randomNumber = Math.floor(Math.random()*100 + 1);
 
     if (!array.includes(randomNumber)) {
         array.push(randomNumber);
