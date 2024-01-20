@@ -1,6 +1,6 @@
 'use strict';
 
-let array = [];
+const array = [];
 
 const uniqueNumber = function () {
     let randomNumber = Math.floor(Math.random()*100);
