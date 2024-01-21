@@ -1,6 +1,6 @@
 'use strict';
 
-const array = [];
+let array = [];
 
 const uniqueNumber = function () {
     let randomNumber = Math.floor(Math.random()*100 + 1);
@@ -8,7 +8,9 @@ const uniqueNumber = function () {
     if (!array.includes(randomNumber)) {
         array.push(randomNumber);
         return randomNumber;
-    } else while (array.includes(randomNumber)) {
+    }
+
+    while (array.includes(randomNumber)) {
         randomNumber = Math.floor(Math.random()*100 + 1);
     }
     
