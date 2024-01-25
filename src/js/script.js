@@ -1,19 +1,19 @@
 'use strict'
 
 const createUser = function (name, age) {
-  const user = {
-    name,
-    age,
-    greet () {
-      console.log(`Hello my name is ${user.name}`)
+    const user = {
+        name,
+        age,
+        greet () {
+            console.log(`Hello my name is ${user.name}`)
+        }
     }
-  }
 
-  user.greet2 = function () {
-    console.log(`Hello my name is ${this.name}`)
-  }
+    user.greet2 = function () {
+        console.log(`Hello my name is ${this.name}`)
+    }
 
-  return user
+    return user
 }
 
 const user1 = createUser('Іван', 25)
