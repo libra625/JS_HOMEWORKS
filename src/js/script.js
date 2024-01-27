@@ -24,21 +24,21 @@ const conductInterview = function (candidate, requirements) {
     return true
 }
 
-const evaluateCandidate = function (candidate) {
+const evaluateCandidate = function (candidate, requirements) {
     let scoreOfCandidate = 0
 
     for (const requirement of requirements) {
         if (candidate.skills.includes(requirement)) scoreOfCandidate += 1
     }
 
-    return scoreOfCandidate * 10
+    return (scoreOfCandidate / requirements.length) * 100
 }
 
 const scheduleInterviews = function (candidates, requirements, evaluationFunction) {
     let score = 0
 
     for (const candidate of candidates) {
-        score = evaluationFunction(candidate)
+        score = evaluationFunction(candidate, requirements)
         evaluatedCandidates.push({ candidate, score })
     }
 
