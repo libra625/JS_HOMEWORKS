@@ -1,10 +1,15 @@
 'use strict'
 
 const createUser = function (name, age) {
+    const greet3 = function () {
+        console.log(`Hello I am ${this.name}!`)
+    }
+
     const user = {
         name,
         age,
-        greet () {
+        greet3,
+        greet0 () {
             console.log(`Hello my name is ${user.name}`)
         }
     }
@@ -25,10 +30,12 @@ const createUser = function (name, age) {
 const user1 = createUser('Іван', 25)
 const user2 = createUser('Марія', 30)
 
-user1.greet()
+user1.greet0()
 user1.greet1()
 user1.greet2()
+user1.greet3()
 
-user2.greet()
+user2.greet0()
 user2.greet1()
 user2.greet2()
+user2.greet3()
