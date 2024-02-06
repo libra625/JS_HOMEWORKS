@@ -1,2 +1,2 @@
-# <center> Home Works JS </center>
-## <center> main </center>
+# ДЗ 40. Reduce
+### Написати свою реалзіацю функції reduce
