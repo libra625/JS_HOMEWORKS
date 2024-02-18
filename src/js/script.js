@@ -22,7 +22,7 @@ const example = function (a, b) {
 }
 
 const exampleWithContext = example.bind(someObj, 'string1', 'string2')
-const exampleWithContext2 = example.bind(someObj, 'string1', 'string2')
+const exampleWithContext2 = example.myBind(someObj, 'string1', 'string2')
 
 exampleWithContext(10, 20)
 exampleWithContext2(10, 20)
