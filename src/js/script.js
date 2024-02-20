@@ -20,7 +20,7 @@ const add1ToArray = (array) => {
 
     return arrayIncreased
 }
-
+// const incrementArray = (array) => array.map((element) => element + 1); ???
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 console.log(add1ToArray(arr))
