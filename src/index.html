@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>JS_HOMEWORKS</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link href="./styles/style.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <h2>Register</h2>
 
+    <form class="form" data-form id="userRegistration">
+        <label for="name">
+            <input id="name" name="name" type="text">
+        </label>
+
+        <label for="email">
+            <input id="email" name="email" type="text">
+        </label>
+
+        <label for="password">
+            <input id="password" name="password" type="password">
+        </label>
+
+        <button class="button_submit" type="submit">Register</button>
+    </form>
+
+    <div class="form_result"></div>
+</div>
 
 <script src="./js/script.js"></script>
 </body>
