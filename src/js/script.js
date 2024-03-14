@@ -6,12 +6,14 @@
 
         const inputs = document.querySelectorAll('input')
 
-        console.log(event)
+        let filledsAreFilled = true
 
         const result = document.querySelector('.form_result')
 
         inputs.forEach(input => {
-            input.value === '' ? result.innerHTML = 'You need to fill all the fields' : result.innerHTML = 'WELCOME TO TEAM BUDDY'
+            if (input.value === '') filledsAreFilled = false
         })
+
+        filledsAreFilled ? result.innerHTML = 'WELCOME TO THE CLUB BUDDY' : result.innerHTML = 'FILL ALL THE FIELDS'
     })
 }())
