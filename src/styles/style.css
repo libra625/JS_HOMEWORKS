@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    width: 60vh;
+    list-style: none;
+}
+
+.no-data {
+    font-size: 60px;
+    color: red;
+}
