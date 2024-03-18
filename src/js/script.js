@@ -14,9 +14,9 @@
 
             localStorage.setItem(dataKey, JSON.stringify(data))
 
-            setTimeout(() => {
-                window.location.href = 'http://localhost:63342/JS_HOMEWORKS/src/sub.html'
-            }, 3000)
+            // setTimeout(() => {
+            //     window.location.href = 'http://localhost:63342/JS_HOMEWORKS/src/sub.html'
+            // }, 3000)
         })
     }
 
